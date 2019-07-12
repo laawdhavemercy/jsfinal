@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Joshua's Pizza Palace!!</title>
+		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+		<meta content="width=device-width,initial-scale=1.0" name="viewport">
+		<link rel="stylesheet" href="./css/pizza_final.css">
+		<script src="pizza.js"></script>
+	</head>
+	<body>
+		<div class="container">
+		<div id="menuBG"><h1>Joshua's Pizza Palace Menu!</h1>
+			<form id="frmMenu">
+				<div class="menu">
+					<h3>Size:</h3>
+					<input class="size" type="radio" name="Size" value="Personal Pizza"> Personal Pizza - $6<br>
+					<input class="size" type="radio" name="Size" value="Medium Pizza"> Medium Pizza - $10<br>
+					<input class="size" type="radio" name="Size" value="Large Pizza"> Large Pizza - $14<br>
+					<input class="size" type="radio" name="Size" value="Extra Large Pizza"> Extra Large Pizza - $16<br>
+				</div>
+				<div class="menu">
+					<h3>Meats:</h3>
+					<input class="meats" type="checkbox" name="Meat" value="Pepperoni"> Pepperoni - $1<br>
+					<input class="meats" type="checkbox" name="Meat" value="Sausage"> Sausage - $1<br>
+					<input class="meats" type="checkbox" name="Meat" value="Canadian Bacon"> Canadian Bacon - $1<br> 
+					<input class="meats" type="checkbox" name="Meat" value="Ground Beef"> Ground Beef - $1<br>
+					<input class="meats" type="checkbox" name="Meat" value="Anchovy"> Anchovy - $1<br>
+					<input class="meats" type="checkbox" name="Meat" value="Chicken"> Chicken - $1<br>
+				</div>
+				<div class="menu">
+					<h3>Veggies:</h3>
+					<input class="veggies" type="checkbox" name="Veggie" value="Tomatoes"> Tomatoes - $1<br>
+					<input class="veggies" type="checkbox" name="Veggie" value="Onions"> Onions - $1<br>
+					<input class="veggies" type="checkbox" name="Veggie" value="Olives"> Olives - $1<br> 
+					<input class="veggies" type="checkbox" name="Veggie" value="Green Peppers"> Green Peppers - $1<br>
+					<input class="veggies" type="checkbox" name="Veggie" value="Mushrooms"> Mushrooms - $1<br>
+					<input class="veggies" type="checkbox" name="Veggie" value="Pineapple"> Pineapple - $1<br>
+					<input class="veggies" type="checkbox" name="Veggie" value="Spinach"> Spinach - $1<br>
+					<input class="veggies" type="checkbox" name="Veggie" value="Jalapeno"> Jalapeno - $1<br>
+				</div>
+				<div class="menu">
+					<h3>Cheese:</h3>
+					<input class="cheese" type="radio" name="Cheese" value="Regular cheese"> Regular cheese<br>
+					<input class="cheese" type="radio" name="Cheese" value="No cheese"> No cheese<br>
+					<input class="cheese" type="radio" name="Cheese" value="Extra cheese"> Extra cheese - $2<br>
+				</div>
+				<div class="menu">
+					<h3>Sauce:</h3>
+					<input class="sauce" type="radio" name="Sauce" value="Marinara sauce"> Marinara sauce<br>
+					<input class="sauce" type="radio" name="Sauce" value="White sauce"> White sauce<br>
+					<input class="sauce" type="radio" name="Sauce" value="Barbeque sauce"> Barbeque sauce<br>
+					<input class="sauce" type="radio" name="Sauce" value="No sauce"> No sauce<br>
+				</div>
+				<div class="menu">
+					<h3>Crust:</h3>
+					<input class="crust" type="radio" name="Crust" value="Plain Crust"> Plain Crust<br>
+					<input class="crust" type="radio" name="Crust" value="Garlic Butter Crust"> Garlic Butter Crust - $2<br>
+					<input class="crust" type="radio" name="Crust" value="Cheese Stuffed Crust"> Cheese Stuffed Crust - $2<br>
+					<input class="crust" type="radio" name="Crust" value="Spicy Crust"> Spicy Crust - $2<br>
+					<input class="crust" type="radio" name="Crust" value="House Special Crust"> House Special Crust - $2<br>
+				</div>
+				
+				<div class="controls"></div>
+				<button id="calculate" type="button" onclick="getReceipt()">Calculate</button><br>
+
+				<div class="button" onclick="getReceipt()">
+					<p>Place Order</p>
+				</div>
+				<div class="button" onclick="clearAll()">
+					<p>Cancel</p>
+				</div>
+			</div>
+			</form><br>
+			
+			<div id="cart">
+				<div id="title1"><h3>You Ordered:</h3></div>
+				<div id="title2"><h3>Subtotal:</h3></div>
+				<div id="showText1"></div>
+				<div id="showText2"></div>
+				<div id="totalPrice1"><h3>Total Price:</h3></div>
+				<div id="totalPrice2"></div>
+			</div>
+		</div>
+		</div>
+		<script src="pizza_final.js"></script>
+	</body>
+</html>
